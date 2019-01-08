@@ -1,0 +1,32 @@
+<h1>Hands-On Session: ReJSON</h1>
+<p>This exercise demonstrates using both a module and specifically, ReJSON.</p>
+<p>You will learn how to execute non-standard Redis commands directly from Python and learn a few commands to
+  manipulate JSON directly from within Redis.</p>
+<p>This directory contains files to use for the exercise. The <code>rejson.py</code> program provides a skeleton to
+  help you get started. We have added code to manage multiple publishers and subscribers running locally
+  and to help create simulated messages. If you get stuck, files ending with <code>_solution.py</code> implements our
+  solution to
+  the exercise. Feel free to study it or ask questions of the training staff.</p>
+<p>Although this is a hands-on exercise, we want to encourage you to use this time to ask
+  questions of the training staff as well.</p>
+<h2>Part One: Review ReJSON Documentation</h2>
+<h3>Instructions</h3>
+<p>Please review the following documentation on redis.io to get started:</p>
+<ul>
+  <li><a href="https://oss.redislabs.com/rejson/commands/">ReJSON API</a></li>
+  <li><a href="https://github.com/andymccurdy/redis-py">Python client API</a></li>
+</ul>
+<h2>Part Two: Update JSON from within Redis</h2>
+<ol>
+  <li>Prior to modifying <code>rejson.py</code>, run the program and see what happens</li>
+  <li>Update the file with your connection information</li>
+  <li>Write code to set the <code>last</code> field in the <code>name</code> object of the Key to
+    &quot;Sanfilippo&quot;</li>
+  <li>Write code to append &quot;Sicily&quot; to the <code>location</code> array in the Key</li>
+  <li>Write code to increment <code>age</code> in the Key from 40 to 41.</li>
+</ol>
+<h3>Further Activities</h3>
+<ol>
+  <li>Write code to delete the the <code>first</code> field from the <code>last</code> object using <code>JSON.DEL</code></li>
+  <li>Write code to remove the 'Campobello di Licata' from the <code>location</code> array.</li>
+</ol>
