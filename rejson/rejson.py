@@ -4,7 +4,7 @@ import json
 # connect to redis
 r = redis.Redis(
     host='localhost',
-    password='',
+    port='6379',
     decode_responses=True)
 
 sampleObject = {

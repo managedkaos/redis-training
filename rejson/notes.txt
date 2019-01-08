@@ -1,0 +1,4 @@
+# Preconfigured rejson environment
+
+docker pull redislabs/rejson
+docker run -p 6380:6379 redislabs/rejson
